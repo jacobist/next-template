@@ -1,0 +1,55 @@
+.main{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 5rem 0;
+}
+.contact{
+  display:flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 38%;
+  height: 100%;
+}
+.info{
+  display:flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 5rem) 7rem 3rem;
+  gap: 3rem .5rem;
+  height: 100%;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+.field{
+  height: 50%;
+  border: 1px rgb(213, 213, 213) solid;
+  border-radius: 2px;
+  background-color: rgb(248, 248, 248);
+}
+
+@media screen and (max-width:750px){
+  .main{
+    flex-direction: column;
+    padding: 2rem;
+    height: auto;
+  }
+  .contact{
+    display: flex;
+    width: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+  .info{
+    flex-direction: column;
+  }
+}
